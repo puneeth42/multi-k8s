@@ -19,7 +19,7 @@ before_install:
   - docker build -t puneeth8994/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-    - docker run -e CI=true puneeth42/react-test npm run test -- --coverage
+  - docker run -e CI=true puneeth8994/react-test npm run test -- --coverage
 
 deploy:
   provider: script
